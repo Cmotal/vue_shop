@@ -96,7 +96,7 @@
         :model="addRoleForm"
         :rules="addRoleFormRules"
         ref="addRoleFormRef"
-        label-width="70px"
+        label-width="80px"
       >
         <el-form-item label="角色名称" prop="roleName">
           <el-input v-model="addRoleForm.roleName"></el-input>
@@ -122,7 +122,7 @@
         :model="editRoleForm"
         :rules="addRoleFormRules"
         ref="editRoleFormRef"
-        label-width="70px"
+        label-width="80px"
       >
         <el-form-item label="角色" prop="roleName">
           <el-input v-model="editRoleForm.roleName"></el-input>
