@@ -12,7 +12,7 @@
       <!-- 添加角色按钮 -->
       <el-row>
         <el-col>
-          <el-button type="primary" @click="addRoleDialogVisible = true">添加角色</el-button>
+          <el-button type="primary" @click="addRoleDialogVisible = true" style="margin-bottom: 15px">添加角色</el-button>
         </el-col>
       </el-row>
       <!-- 角色列表区域 -->
@@ -57,7 +57,7 @@
             </el-row>
           </template>
         </el-table-column>
-        <el-table-column type="index"></el-table-column>
+        <el-table-column type="index" label="#"></el-table-column>
         <el-table-column label="角色名称" prop="roleName"></el-table-column>
         <el-table-column label="角色描述" prop="roleDesc"></el-table-column>
         <el-table-column label="操作" width="300px">
@@ -367,4 +367,5 @@ export default {
   display: flex;
   align-items: center;
 }
+
 </style>

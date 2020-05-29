@@ -33,4 +33,14 @@ body,
 
 .ql-editor {
     min-height: 300px;
+} 
+
+.el-input{
+    margin-bottom: 20px;
 }
+
+
+.el-pagination{
+margin-top: 20px ;
+}
+

@@ -18,8 +18,8 @@
       </el-row>
       <!-- 订单列表数据 -->
       <el-table :data="orderlist" border stripe>
-        <el-table-column type="index"></el-table-column>
-        <el-table-column label="订单编号" prop="order_number"></el-table-column>
+        <el-table-column type="index" label="#"></el-table-column>
+        <el-table-column label="订单编号" prop="order_number" width= 250px></el-table-column>
         <el-table-column label="订单价格" prop="order_price"></el-table-column>
         <el-table-column label="订单付款" prop="pay_status">
           <template slot-scope="scope">
@@ -28,7 +28,7 @@
           </template>
         </el-table-column>
         <el-table-column label="是否发货" prop="is_send"></el-table-column>
-        <el-table-column label="下单时间" prop="create_time">
+        <el-table-column label="下单时间" prop="create_time"   width= 200px>
           <template slot-scope="scope">{{scope.row.create_time | dataFormat}}</template>
         </el-table-column>
         <el-table-column label="操作">
@@ -62,7 +62,7 @@
         :model="addressForm"
         :rules="addressFormRules"
         ref="addressFormRef"
-        label-width="80px"
+        label-width="100px"
       >
         <el-form-item label="省市区/县" prop="address1">
           <el-cascader :options="cityData" v-model="addressForm.address1"></el-cascader>

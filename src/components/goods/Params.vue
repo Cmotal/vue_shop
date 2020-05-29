@@ -13,7 +13,7 @@
       <!-- 选择商品分类区域 -->
       <el-row class="cat_opt">
         <el-col>
-          <span>选择商品分类</span>
+          <span>选择商品分类:</span>
 
           <el-cascader
             expand-trigger="hover"
@@ -23,6 +23,7 @@
             @change="handleChange"
             clearable
             change-on-select
+            class="cateListBox"
           ></el-cascader>
         </el-col>
       </el-row>
@@ -418,5 +419,9 @@ export default {
 }
 .el-button{
   margin: 5px 0 20px 20px;
+}
+.cateListBox{
+  margin: 10px 0  0 20px;
+  width: 50%;
 }
 </style>

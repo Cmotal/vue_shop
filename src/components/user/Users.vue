@@ -20,8 +20,8 @@
         </el-col>
       </el-row>
       <!-- 用户列表 -->
-      <el-table :data="userlist" border stripe>
-        <el-table-column type="index"></el-table-column>
+      <el-table :data="userlist" border stripe >
+        <el-table-column type="index" label="#"></el-table-column>
         <el-table-column e-column label="姓名" prop="username"></el-table-column>
         <el-table-column label="邮箱" prop="email"></el-table-column>
         <el-table-column label="电话" prop="mobile"></el-table-column>
@@ -71,7 +71,7 @@
     </el-card>
     <!-- 添加用户弹框 -->
     <el-dialog title="添加用户" :visible.sync="addDialogVisible" width="50%" @close="addDialogClosed">
-      <el-form :model="addForm" :rules="addFormRules" ref="addFormRef" label-width="70px">
+      <el-form :model="addForm" :rules="addFormRules" ref="addFormRef" label-width="80px">
         <el-form-item label="用户名" prop="username">
           <el-input v-model="addForm.username"></el-input>
         </el-form-item>
@@ -348,11 +348,5 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.el-table {
-  margin-top: 20px;
-  font-size: 14px;
-}
-.el-pagination {
-  margin-top: 18px;
-}
+
 </style>

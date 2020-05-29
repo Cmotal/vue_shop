@@ -11,7 +11,7 @@
     <el-card>
       <el-row>
         <el-col>
-          <el-button type="primary" @click="showAddCateDialog">添加分类</el-button>
+          <el-button type="primary" @click="showAddCateDialog" style="margin-bottom: 15px">添加分类</el-button>
         </el-col>
       </el-row>
       <!-- 商品分类表格 -->
